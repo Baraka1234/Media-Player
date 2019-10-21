@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MEDIA PLAYER</title>
+	<style>
+	#div1{
+	width: 200px;
+	height: 200px;
+	padding: 10px;
+	border: 1px solid #aaaaaa;
+	text-align: center;
+    }
+   </style>
+	<script>
+		function allowDrop(ev){
+			ev.preventDefault();
+		}
+		function drag(ev){
+	ev.preventDefault();
+    }
+
+       function drop(ev){
+	ev.preventDefault();
+	var data=ev.dataTransfer.getData("text");
+	ev.target.appendChild(document.getElementById(data));
+    }
+	</script>
+</head>
+<body>
+   <h2 style="background-color: black"><font color="pink"><center> PLEASE PLAY AN AUDIO OR A VIDEO</center><font><h2><br>
+
+
+   	<img src="images/catty.jpeg" alt="kitty Fur" style="width:100px; height:100px;"> Meow by kitty Fur
+   	</br>
+   	<audio controls>
+   	<source src="audio/Meow.mp3" type="audio.mpeg">
+   	</audio>
+   </br>
+
+   	<img src="images/duck.jpeg" alt="Doc" style="width:100px; height:100px;"> Quack by Doc
+   	</br>
+   	<audio controls>
+   	<source src="audio/duck.ogg" type="audio.ogg">
+   	</audio>
+   </br>
+
+   	<img src="images/cricket.jpeg" alt="Jimmny the cricket" style="width:100px; height:100px;"> cric by Jimmny the cricket
+   	</br>
+   	<audio controls>
+   	<source src="audio/Field_cricket.ogg" type="audio.ogg">
+   	</audio>
+   </br>
+
+   	<img src="images/elephant.jpeg" alt="El Tusk" style="width:100px; height:100px;"> Trumpet by El Tusk
+   	</br>
+   	<audio controls>
+   	<source src="audio/trumpeting.ogg" type="audio.ogg">
+   	</audio>
+   </br>
+
+   	<img src="images/kitty.jpeg" alt="Catty Adorable" style="width:100px; height:100px;"> different by Catty Adorable
+   	</br>
+   	<audio controls>
+   	<source src="audio/bird.mp3" type="audio.mpeg">
+   	</audio>
+   </br>
+   <pre>
+
+
+
+  <a href="pages/elmovideo.html"> Click here to watch an Elmo Video </a>
+
+
+
+  <a href="pages/TeaHistory.html"> Cick here to wach a video on the history of tea </a>
+
+ 
+
+  <a href="pages/FajrAwake.html"> Click here to watch a video on how to wake up for Fajr </a>
+ 
+
+
+  <a href="pages/Recitation.html"> Click here to watch a beautiful recitation </a><
+
+
+  
+  <a href="pages/QuizQuestions.html"> See how many of these you can answer correctly </a>
+</br>
+</pre>
+
+<pre style="text-align: center;">
+
+</br>
+<p>Drag the image into the square </p></br>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+
+<a href="https://www.linkedin.com/in/williamhgates"><img id="drag1" src="images/in.png" dragable="true" ondragstart="drag(event)" width="100px" height="100px">
+</br>
+<a href="https://www.twitter.com/billgates"><img id="drag1" src="images/twt.png" dragable="true" ondragstart="drag(event)" width="100px" height="100px">
+</br>
+<a href="https://www.instagram.com/BillGates"><img id="drag1" src="images/insta.jpg" dragable="true" ondragstart="drag(event)" width="100px" height="100px">
+</br>
+<a href="https://www.facebook.com/BillGates"><img id="drag1" src="images/facebook.png" dragable="true" ondragstart="drag(event)" width="100px" height="100px">
+
+
+
+</pre>
+</body>
